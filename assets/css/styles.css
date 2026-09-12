@@ -226,6 +226,51 @@ h2 {
 }
 .section-sub { color: var(--muted); font-size: 1.05rem; max-width: 540px; line-height: 1.7; }
 
+/* ── FEATURES ── */
+.features-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; margin-top: 3rem;
+}
+.feature-card {
+  background: var(--card); border-radius: 16px;
+  padding: 2rem; border: 1px solid rgba(30,58,99,.08);
+  transition: transform .2s, box-shadow .2s;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(30,58,99,.12); }
+.feature-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: rgba(30,58,99,.08);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 1.2rem;
+}
+.feature-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+.feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.6; }
+
+/* ── ROLES ── */
+.roles-section { background: var(--navy); padding: 5.5rem 6%; }
+.roles-section h2, .roles-section .section-label { color: var(--white); }
+.roles-section .section-label { color: var(--amber); }
+.roles-section .section-sub { color: rgba(255,255,255,.6); }
+.roles-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem; margin-top: 3rem;
+}
+.role-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px; padding: 2rem;
+  transition: background .2s;
+}
+.role-card:hover { background: rgba(255,255,255,.1); }
+.role-emoji { font-size: 2.2rem; margin-bottom: 1rem; }
+.role-card h3 { color: var(--amber); font-size: 1.1rem; font-weight: 700; margin-bottom: .8rem; }
+.role-card ul { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+.role-card ul li {
+  color: rgba(255,255,255,.75); font-size: .88rem;
+  padding-left: 1.2rem; position: relative;
+}
+.role-card ul li::before { content: '→'; position: absolute; left: 0; color: var(--amber); }
+
 /* Logo Container*/
 .logo-container {
     display: flex;

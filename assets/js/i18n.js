@@ -19,6 +19,26 @@
   const get = (obj, path) =>
     path.split('.').reduce((o, k) => (o != null ? o[k] : undefined), obj);
 
+    /* ── Render dynamic lists ── */
+    function renderFeatures(lang) {
+    const cards = translations[lang].features.cards;
+    document.getElementById('features-grid').innerHTML = cards.map(c => `
+      <div class="feature-card">
+        <div class="feature-icon">${c.icon}</div>
+        <h3>${c.title}</h3>
+        <p>${c.desc}</p>
+      </div>`).join('');
+  }
+function renderRoles(lang) {
+    const cards = translations[lang].roles.cards;
+    document.getElementById('roles-grid').innerHTML = cards.map(c => `
+      <div class="role-card">
+        <div class="role-emoji">${c.emoji}</div>
+        <h3>${c.title}</h3>
+        <ul>${c.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      </div>`).join('');
+  }
+  
   /* ── Apply translations to static elements ── */
   function applyTranslations(lang) {
     document.documentElement.lang = lang;

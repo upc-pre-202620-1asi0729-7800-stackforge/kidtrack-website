@@ -1,0 +1,74 @@
+{
+  "es": {
+  "nav": {
+    "features": "Funciones",
+        "roles": "Roles",
+        "plans": "Planes",
+        "how": "¿Cómo funciona?",
+        "signin": "Iniciar sesión",
+        "cta": "Comenzar"
+  },
+  "hero": {
+    "badge": "Sistema en vivo",
+        "title_line1": "Transporte escolar",
+        "title_line2": "seguro y digital",
+        "description": "KidTrack digitaliza la operación del transporte escolar privado. Monitoreo en tiempo real, gestión de rutas y comunicación entre conductores y padres — todo en un solo lugar.",
+        "btn_plans": "Ver planes",
+        "btn_how": "¿Cómo funciona?",
+        "tag1": "Monitoreo seguro",
+        "tag2": "3 paradas completadas",
+        "phone_route": "Ruta Miraflores A",
+        "driver_name": "Luis Medina",
+        "driver_status": "Conductor activo",
+        "driver_badge": "En ruta",
+        "student_name": "Sofía Mamani",
+        "student_status": "Abordó en parada 2"
+  },
+  "stats": {
+    "roles_num": "3",
+        "roles_label": "Roles diferenciados",
+        "digital_num": "100%",
+        "digital_label": "Operación digitalizada",
+        "plans_num": "3",
+        "plans_label": "Planes disponibles",
+        "routes_num": "∞",
+        "routes_label": "Rutas en plan completo"
+  }
+},
+  "en": {
+  "nav": {
+    "features": "Features",
+        "roles": "Roles",
+        "plans": "Plans",
+        "how": "How it works?",
+        "signin": "Sign in",
+        "cta": "Get started"
+  },
+  "hero": {
+    "badge": "Live system",
+        "title_line1": "School transportation",
+        "title_line2": "safe and digital",
+        "description": "KidTrack digitalizes private school transportation operations. Real-time monitoring, route management and communication between drivers and parents — all in one place.",
+        "btn_plans": "View plans",
+        "btn_how": "How does it work?",
+        "tag1": "Secure monitoring",
+        "tag2": "3 stops completed",
+        "phone_route": "Miraflores Route A",
+        "driver_name": "Luis Medina",
+        "driver_status": "Active driver",
+        "driver_badge": "On route",
+        "student_name": "Sofía Mamani",
+        "student_status": "Boarded at stop 2"
+  },
+  "stats": {
+    "roles_num": "3",
+        "roles_label": "Differentiated roles",
+        "digital_num": "100%",
+        "digital_label": "Digitalized operation",
+        "plans_num": "3",
+        "plans_label": "Available plans",
+        "routes_num": "∞",
+        "routes_label": "Routes on full plan"
+  }
+}
+}

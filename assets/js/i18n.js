@@ -70,5 +70,27 @@
   /* ── Init ── */
   const savedLang = localStorage.getItem('sr-lang') || 'en';
   applyTranslations(savedLang);
+
+  
+
+    /* ── About videos: data-yt is the single source of truth.
+        Fills the thumbnail, then swaps in the YouTube player on click. ── */
+  document.querySelectorAll('.about-frame').forEach(frame => {
+    const id = frame.dataset.yt;
+    const ready = id && !id.startsWith('VIDEO_ID'); // false while still a placeholder
+    const thumb = frame.querySelector('.about-thumb');
+
+    if (ready && thumb) thumb.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+
+    frame.addEventListener('click', () => {
+      if (!ready) return;
+      frame.innerHTML =
+        `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
+                 title="KidTrack video" allowfullscreen
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+    });
+  });
+
+
 })
 

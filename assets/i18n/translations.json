@@ -1,75 +1,228 @@
 {
   "es": {
-  "nav": {
-    "features": "Funciones",
-        "roles": "Roles",
-        "plans": "Planes",
-        "how": "¿Cómo funciona?",
-        "signin": "Iniciar sesión",
-        "cta": "Comenzar"
+    "nav": {
+      "features": "Funciones",
+      "roles": "Roles",
+      "plans": "Planes",
+      "how": "¿Cómo funciona?",
+      "signin": "Iniciar sesión",
+      "cta": "Comenzar"
+    },
+    "hero": {
+      "badge": "Sistema en vivo",
+      "title_line1": "Transporte escolar",
+      "title_line2": "seguro y digital",
+      "description": "KidTrack digitaliza la operación del transporte escolar privado. Monitoreo en tiempo real, gestión de rutas y comunicación entre conductores y padres — todo en un solo lugar.",
+      "btn_plans": "Ver planes",
+      "btn_how": "¿Cómo funciona?",
+      "tag1": "Monitoreo seguro",
+      "tag2": "3 paradas completadas",
+      "phone_route": "Ruta Miraflores A",
+      "driver_name": "Luis Medina",
+      "driver_status": "Conductor activo",
+      "driver_badge": "En ruta",
+      "student_name": "Sofía Mamani",
+      "student_status": "Abordó en parada 2"
+    },
+    "stats": {
+      "roles_num": "3",
+      "roles_label": "Roles diferenciados",
+      "digital_num": "100%",
+      "digital_label": "Operación digitalizada",
+      "plans_num": "3",
+      "plans_label": "Planes disponibles",
+      "routes_num": "∞",
+      "routes_label": "Rutas en plan completo"
+    },
+    "features": {
+      "label": "Funcionalidades",
+      "title": "Todo lo que necesitas para gestionar tu flota",
+      "subtitle": "Diseñado para reemplazar WhatsApp, llamadas y papel con una plataforma centralizada y profesional.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Gestión de rutas y paradas",
+          "desc": "Crea rutas con sus paradas, asigna conductores y alumnos desde un panel centralizado e intuitivo."
+        },
+        {
+          "icon": "📡",
+          "title": "Monitoreo en tiempo real",
+          "desc": "Los padres siguen el trayecto de sus hijos en vivo. Los administradores supervisan toda la flota simultáneamente."
+        },
+        {
+          "icon": "✅",
+          "title": "Control de abordaje",
+          "desc": "El conductor marca el abordaje de cada alumno en cada parada. Los padres reciben notificaciones al instante."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Reporte de incidencias",
+          "desc": "Los conductores pueden reportar incidencias durante el viaje. Todo queda registrado en una bitácora detallada."
+        },
+        {
+          "icon": "📊",
+          "title": "Historial y reportes",
+          "desc": "Accede al historial completo de trayectos, asistencia mensual y analítica de flota según tu plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Notificaciones de estado",
+          "desc": "Alertas automáticas de abordaje, llegada y eventos importantes para mantener a los padres informados."
+        }
+      ]
+    },
+    "roles": {
+      "label": "Roles del sistema",
+      "title": "Una plataforma, tres experiencias",
+      "subtitle": "Cada rol tiene su propia vista y permisos adaptados a su función dentro del servicio.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrador",
+          "items": [
+            "Contrata y gestiona el plan",
+            "Registra conductores y padres",
+            "Crea rutas y paradas",
+            "Asigna alumnos a rutas",
+            "Supervisa toda la operación"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Conductor",
+          "items": [
+            "Inicia y finaliza trayectos",
+            "Marca abordaje de alumnos",
+            "Reporta incidencias en ruta",
+            "Accede a su bitácora de viajes",
+            "Botón de pánico en emergencias"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Padre de Familia",
+          "items": [
+            "Monitorea el trayecto de sus hijos",
+            "Recibe notificaciones de abordaje",
+            "Ve el historial de trayectos",
+            "Acceso a cámara interior (plan intermedio)",
+            "Alertas personalizadas (plan completo)"
+          ]
+        }
+      ]
+    }
   },
-  "hero": {
-    "badge": "Sistema en vivo",
-        "title_line1": "Transporte escolar",
-        "title_line2": "seguro y digital",
-        "description": "KidTrack digitaliza la operación del transporte escolar privado. Monitoreo en tiempo real, gestión de rutas y comunicación entre conductores y padres — todo en un solo lugar.",
-        "btn_plans": "Ver planes",
-        "btn_how": "¿Cómo funciona?",
-        "tag1": "Monitoreo seguro",
-        "tag2": "3 paradas completadas",
-        "phone_route": "Ruta Miraflores A",
-        "driver_name": "Luis Medina",
-        "driver_status": "Conductor activo",
-        "driver_badge": "En ruta",
-        "student_name": "Sofía Mamani",
-        "student_status": "Abordó en parada 2"
-  },
-  "stats": {
-    "roles_num": "3",
-        "roles_label": "Roles diferenciados",
-        "digital_num": "100%",
-        "digital_label": "Operación digitalizada",
-        "plans_num": "3",
-        "plans_label": "Planes disponibles",
-        "routes_num": "∞",
-        "routes_label": "Rutas en plan completo"
-  }
-},
-
   "en": {
-  "nav": {
-    "features": "Features",
-        "roles": "Roles",
-        "plans": "Plans",
-        "how": "How it works?",
-        "signin": "Sign in",
-        "cta": "Get started"
-  },
-  "hero": {
-    "badge": "Live system",
-        "title_line1": "School transportation",
-        "title_line2": "safe and digital",
-        "description": "KidTrack digitalizes private school transportation operations. Real-time monitoring, route management and communication between drivers and parents — all in one place.",
-        "btn_plans": "View plans",
-        "btn_how": "How does it work?",
-        "tag1": "Secure monitoring",
-        "tag2": "3 stops completed",
-        "phone_route": "Miraflores Route A",
-        "driver_name": "Luis Medina",
-        "driver_status": "Active driver",
-        "driver_badge": "On route",
-        "student_name": "Sofía Mamani",
-        "student_status": "Boarded at stop 2"
-  },
-  "stats": {
-    "roles_num": "3",
-        "roles_label": "Differentiated roles",
-        "digital_num": "100%",
-        "digital_label": "Digitalized operation",
-        "plans_num": "3",
-        "plans_label": "Available plans",
-        "routes_num": "∞",
-        "routes_label": "Routes on full plan"
+    "nav": {
+      "features": "Features",
+      "roles": "Roles",
+      "plans": "Plans",
+      "how": "How it works?",
+      "signin": "Sign in",
+      "cta": "Get started"
+    },
+    "hero": {
+      "badge": "Live system",
+      "title_line1": "School transportation",
+      "title_line2": "safe and digital",
+      "description": "KidTrack digitalizes private school transportation operations. Real-time monitoring, route management and communication between drivers and parents — all in one place.",
+      "btn_plans": "View plans",
+      "btn_how": "How does it work?",
+      "tag1": "Secure monitoring",
+      "tag2": "3 stops completed",
+      "phone_route": "Miraflores Route A",
+      "driver_name": "Luis Medina",
+      "driver_status": "Active driver",
+      "driver_badge": "On route",
+      "student_name": "Sofía Mamani",
+      "student_status": "Boarded at stop 2"
+    },
+    "stats": {
+      "roles_num": "3",
+      "roles_label": "Differentiated roles",
+      "digital_num": "100%",
+      "digital_label": "Digitalized operation",
+      "plans_num": "3",
+      "plans_label": "Available plans",
+      "routes_num": "∞",
+      "routes_label": "Routes on full plan"
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything you need to manage your fleet",
+      "subtitle": "Designed to replace WhatsApp, calls and paper with a centralized, professional platform.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Route & stop management",
+          "desc": "Create routes with their stops, assign drivers and students from a centralized, intuitive dashboard."
+        },
+        {
+          "icon": "📡",
+          "title": "Real-time monitoring",
+          "desc": "Parents follow their children's journey live. Administrators supervise the entire fleet simultaneously."
+        },
+        {
+          "icon": "✅",
+          "title": "Boarding control",
+          "desc": "The driver marks each student's boarding at each stop. Parents receive instant notifications."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Incident reporting",
+          "desc": "Drivers can report incidents during the trip. Everything is recorded in a detailed log."
+        },
+        {
+          "icon": "📊",
+          "title": "History & reports",
+          "desc": "Access the full history of trips, monthly attendance and fleet analytics according to your plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Status notifications",
+          "desc": "Automatic boarding, arrival and important event alerts to keep parents informed."
+        }
+      ]
+    },
+    "roles": {
+      "label": "System roles",
+      "title": "One platform, three experiences",
+      "subtitle": "Each role has its own view and permissions adapted to its function within the service.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrator",
+          "items": [
+            "Hires and manages the plan",
+            "Registers drivers and parents",
+            "Creates routes and stops",
+            "Assigns students to routes",
+            "Oversees the entire operation"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Driver",
+          "items": [
+            "Starts and ends trips",
+            "Marks student boarding",
+            "Reports on-route incidents",
+            "Accesses trip logbook",
+            "Panic button for emergencies"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Parent",
+          "items": [
+            "Monitors children's journey",
+            "Receives boarding notifications",
+            "Views trip history",
+            "Interior camera access (intermediate plan)",
+            "Personalized alerts (full plan)"
+          ]
+        }
+      ]
+    }
   }
-}
 }

@@ -40,6 +40,35 @@
       if (val !== undefined) el.innerHTML = val;
     });
 
+      function renderPlans(lang) {
+    const d = translations[lang].plans;
+    const featuredIdx  = 1;
+    const planKeys     = ['BASIC', 'INTERMEDIATE', 'COMPLETE'];
+    document.getElementById('plans-grid').innerHTML = d.cards.map((c, i) => {
+      const planUrl = `${SIGNUP_ADMIN_URL}?planTier=${planKeys[i]}&planName=${encodeURIComponent(c.name)}&planPrice=${encodeURIComponent(c.price)}`;
+      return `
+      <div class="plan-card ${i === featuredIdx ? 'featured' : ''}">
+        ${i === featuredIdx ? `<div class="plan-badge">${d.badge_popular}</div>` : ''}
+        <div class="plan-name">${c.emoji} ${c.name}</div>
+        <div class="plan-price">${c.price} <span>${c.period}</span></div>
+        <div class="plan-desc">${c.desc}</div>
+        <ul class="plan-features">
+          ${c.features.map(f => `<li>${f}</li>`).join('')}
+        </ul>
+        <a href="${planUrl}" class="btn-plan ${i === featuredIdx ? 'btn-plan-primary' : 'btn-plan-outline'}">${d.btn_hire}</a>
+      </div>`;
+    }).join('');
+  }
+
+  function renderSteps(lang) {
+    const steps = translations[lang].how.steps;
+    document.getElementById('steps-list').innerHTML = steps.map((s, i) => `
+      <div class="step">
+        <div class="step-num">${i + 1}</div>
+        <div class="step-content"><h4>${s.title}</h4><p>${s.desc}</p></div>
+      </div>`).join('');
+  }
+
     /* dynamic sections */
     renderFeatures(lang);
     renderRoles(lang);

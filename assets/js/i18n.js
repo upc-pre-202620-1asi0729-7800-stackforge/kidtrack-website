@@ -1,7 +1,7 @@
 (
     async () => {
   /* ── Web app base URL ── */
-  const APP_URL          = 'https://ashy-dune-098494d0f.7.azurestaticapps.net';
+  const APP_URL          = 'https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/';
   const SIGNIN_URL       = `${APP_URL}/identity-and-access-management/sign-in`;
   const SIGNUP_ADMIN_URL = `${APP_URL}/identity-and-access-management/sign-up`;
 
@@ -55,7 +55,7 @@
         <ul class="plan-features">
           ${c.features.map(f => `<li>${f}</li>`).join('')}
         </ul>
-        <a href="${planUrl}" class="btn-plan ${i === featuredIdx ? 'btn-plan-primary' : 'btn-plan-outline'}">${d.btn_hire}</a>
+        <a href="#" class="btn-plan ${i === featuredIdx ? 'btn-plan-primary' : 'btn-plan-outline'}">${d.btn_hire}</a>
       </div>`;
     }).join('');
   }
@@ -103,7 +103,7 @@
 
     /* ── CTA links → web app ── */
     const set = (id, url) => { const el = document.getElementById(id); if (el) el.href = url; };
-    set('nav-cta-link',    SIGNIN_URL);
+    // set('nav-cta-link', SIGNIN_URL); // desactivado temporalmente
     set('cta-hire-link',   SIGNUP_ADMIN_URL);
     set('cta-signin-link', SIGNIN_URL);
   }

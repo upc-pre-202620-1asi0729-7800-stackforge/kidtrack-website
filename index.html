@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>KidTrack — Transporte Escolar Seguro</title>
+  <meta name="description" content="Plataforma integral para el monitoreo en tiempo real, control de asistencia y comunicación segura entre conductores y padres de familia.">
+  <meta name="keywords" content="transporte escolar, monitoreo GPS, seguridad, KidTrack, logística escolar, app bilingüe">
+  <meta name="author" content="StackForge Team">
+  <meta name="copyright" content="StackForge 2026">
+  <meta name="robots" content="index, follow">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo-container">
+    <a href="#" class="logo-link">
+      <img src="assets/images/KidTrackLogo.png" alt="KidTrack Logo" class="logo-img">
+    </a>
+  </div>
+
+  <input type="checkbox" id="menu-check" class="menu-check">
+  
+  <label for="menu-check" class="menu-burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <ul class="nav-menu">
+    <li><a href="#features" data-i18n="nav.features"></a></li>
+    <li><a href="#roles"    data-i18n="nav.roles"></a></li>
+    <li><a href="#plans"    data-i18n="nav.plans"></a></li>
+    <li><a href="#how"      data-i18n="nav.how"></a></li>
+    <li><a href="#" id="nav-cta-link" class="nav-cta" data-i18n="nav.cta"></a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn" data-lang="es">ES</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn active" data-lang="en">EN</button>
+    </li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge"><span data-i18n="hero.badge"></span></div>
+    <h1><span data-i18n="hero.title_line1"></span><br/><em data-i18n="hero.title_line2"></em></h1>
+    <p data-i18n="hero.description"></p>
+    <div class="hero-actions">
+      <a href="#plans" class="btn-primary" data-i18n="hero.btn_plans"></a>
+      <a href="#how"   class="btn-outline"  data-i18n="hero.btn_how"></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-tag tag-1"><span class="icon">🛡️</span> <span data-i18n="hero.tag1"></span></div>
+    <div class="phone-mockup">
+      <div class="phone-screen">
+        <div class="ps-header">
+          <span data-i18n="hero.phone_route"></span>
+          <div class="ps-dot"></div>
+        </div>
+        <div class="ps-map">
+          <div class="route-line"></div>
+          <div class="stop-dot"></div>
+          <div class="stop-dot"></div>
+          <div class="stop-dot"></div>
+          <div class="bus-icon">🚌</div>
+        </div>
+        <div class="ps-card">
+          <div class="ps-avatar">LM</div>
+          <div class="ps-card-text">
+            <strong data-i18n="hero.driver_name"></strong>
+            <span data-i18n="hero.driver_status"></span>
+          </div>
+          <span class="ps-badge" data-i18n="hero.driver_badge"></span>
+        </div>
+        <div class="ps-card">
+          <div class="ps-avatar" style="background:#1E3A63">SM</div>
+          <div class="ps-card-text">
+            <strong data-i18n="hero.student_name"></strong>
+            <span data-i18n="hero.student_status"></span>
+          </div>
+          <span class="ps-badge">✓</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-tag tag-2"><span class="icon">📍</span> <span data-i18n="hero.tag2"></span></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-num" data-i18n="stats.roles_num"></div><div class="stat-label" data-i18n="stats.roles_label"></div></div>
+  <div class="stat"><div class="stat-num" data-i18n="stats.digital_num"></div><div class="stat-label" data-i18n="stats.digital_label"></div></div>
+  <div class="stat"><div class="stat-num" data-i18n="stats.plans_num"></div><div class="stat-label" data-i18n="stats.plans_label"></div></div>
+  <div class="stat"><div class="stat-num" data-i18n="stats.routes_num"></div><div class="stat-label" data-i18n="stats.routes_label"></div></div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-label" data-i18n="features.label"></div>
+  <h2 data-i18n="features.title"></h2>
+  <p class="section-sub" data-i18n="features.subtitle"></p>
+  <div class="features-grid" id="features-grid">
+    <!-- rendered by JS -->
+  </div>
+</section>
+
+<!-- ROLES -->
+<section class="roles-section" id="roles">
+  <div class="section-label" data-i18n="roles.label"></div>
+  <h2 data-i18n="roles.title"></h2>
+  <p class="section-sub" data-i18n="roles.subtitle"></p>
+  <div class="roles-grid" id="roles-grid">
+    <!-- rendered by JS -->
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="section" id="plans">
+  <div class="section-label" data-i18n="plans.label"></div>
+  <h2 data-i18n="plans.title"></h2>
+  <p class="section-sub" data-i18n="plans.subtitle"></p>
+  <div class="plans-grid" id="plans-grid">
+    <!-- rendered by JS -->
+  </div>
+  <p style="margin-top:1.5rem; font-size:.82rem; color:var(--muted);" data-i18n="plans.footnote"></p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how" style="background: white;">
+  <div class="section-label" data-i18n="how.label"></div>
+  <h2 data-i18n="how.title"></h2>
+  <p class="section-sub" data-i18n="how.subtitle"></p>
+  <div class="steps" id="steps-list">
+    <!-- rendered by JS -->
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <h2 data-i18n="cta.title"></h2>
+  <p data-i18n="cta.desc"></p>
+  <div class="cta-actions">
+    <a href="#" id="cta-hire-link"   class="btn-amber"        data-i18n="cta.btn_hire"></a>
+    <a href="#" id="cta-signin-link" class="btn-white-outline" data-i18n="cta.btn_signin"></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p data-i18n-html="footer.text"></p>
+</footer>
+
+<script src="assets/js/i18n.js" defer></script>
+
+</body>
+</html>

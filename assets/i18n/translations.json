@@ -1,0 +1,414 @@
+{
+  "es": {
+    "nav": {
+      "features": "Funciones",
+      "roles": "Roles",
+      "plans": "Planes",
+      "how": "¿Cómo funciona?",
+      "signin": "Iniciar sesión",
+      "cta": "Comenzar"
+    },
+    "hero": {
+      "badge": "Sistema en vivo",
+      "title_line1": "Transporte escolar",
+      "title_line2": "seguro y digital",
+      "description": "KidTrack digitaliza la operación del transporte escolar privado. Monitoreo en tiempo real, gestión de rutas y comunicación entre conductores y padres — todo en un solo lugar.",
+      "btn_plans": "Ver planes",
+      "btn_how": "¿Cómo funciona?",
+      "tag1": "Monitoreo seguro",
+      "tag2": "3 paradas completadas",
+      "phone_route": "Ruta Miraflores A",
+      "driver_name": "Luis Medina",
+      "driver_status": "Conductor activo",
+      "driver_badge": "En ruta",
+      "student_name": "Sofía Mamani",
+      "student_status": "Abordó en parada 2"
+    },
+    "stats": {
+      "roles_num": "3",
+      "roles_label": "Roles diferenciados",
+      "digital_num": "100%",
+      "digital_label": "Operación digitalizada",
+      "plans_num": "3",
+      "plans_label": "Planes disponibles",
+      "routes_num": "∞",
+      "routes_label": "Rutas en plan completo"
+    },
+    "features": {
+      "label": "Funcionalidades",
+      "title": "Todo lo que necesitas para gestionar tu flota",
+      "subtitle": "Diseñado para reemplazar WhatsApp, llamadas y papel con una plataforma centralizada y profesional.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Gestión de rutas y paradas",
+          "desc": "Crea rutas con sus paradas, asigna conductores y alumnos desde un panel centralizado e intuitivo."
+        },
+        {
+          "icon": "📡",
+          "title": "Monitoreo en tiempo real",
+          "desc": "Los padres siguen el trayecto de sus hijos en vivo. Los administradores supervisan toda la flota simultáneamente."
+        },
+        {
+          "icon": "✅",
+          "title": "Control de abordaje",
+          "desc": "El conductor marca el abordaje de cada alumno en cada parada. Los padres reciben notificaciones al instante."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Reporte de incidencias",
+          "desc": "Los conductores pueden reportar incidencias durante el viaje. Todo queda registrado en una bitácora detallada."
+        },
+        {
+          "icon": "📊",
+          "title": "Historial y reportes",
+          "desc": "Accede al historial completo de trayectos, asistencia mensual y analítica de flota según tu plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Notificaciones de estado",
+          "desc": "Alertas automáticas de abordaje, llegada y eventos importantes para mantener a los padres informados."
+        }
+      ]
+    },
+    "roles": {
+      "label": "Roles del sistema",
+      "title": "Una plataforma, tres experiencias",
+      "subtitle": "Cada rol tiene su propia vista y permisos adaptados a su función dentro del servicio.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrador",
+          "items": [
+            "Contrata y gestiona el plan",
+            "Registra conductores y padres",
+            "Crea rutas y paradas",
+            "Asigna alumnos a rutas",
+            "Supervisa toda la operación"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Conductor",
+          "items": [
+            "Inicia y finaliza trayectos",
+            "Marca abordaje de alumnos",
+            "Reporta incidencias en ruta",
+            "Accede a su bitácora de viajes",
+            "Botón de pánico en emergencias"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Padre de Familia",
+          "items": [
+            "Monitorea el trayecto de sus hijos",
+            "Recibe notificaciones de abordaje",
+            "Ve el historial de trayectos",
+            "Acceso a cámara interior (plan intermedio)",
+            "Alertas personalizadas (plan completo)"
+          ]
+        }
+      ]
+    },
+    "plans": {
+      "label": "Planes",
+      "title": "Escala según tu operación",
+      "subtitle": "Desde conductores independientes hasta empresas con flotas grandes. KidTrack crece contigo.",
+      "footnote": "* Las funcionalidades marcadas con asterisco dependen de dispositivos IoT instalados en el vehículo.",
+      "btn_hire": "Contratar",
+      "badge_popular": "Más popular",
+      "cards": [
+        {
+          "emoji": "🟢",
+          "name": "Básico",
+          "price": "$9.99",
+          "period": "/ mes",
+          "desc": "Para grupos pequeños o conductores independientes con una sola ruta.",
+          "features": [
+            "Gestión de 1 ruta",
+            "Registro de conductores, padres y alumnos",
+            "Mapa estático con ruta y paradas",
+            "Marcación de última parada recogida",
+            "Monitoreo básico del vehículo"
+          ]
+        },
+        {
+          "emoji": "🔵",
+          "name": "Intermedio",
+          "price": "$24.99",
+          "period": "/ mes",
+          "desc": "Para conductores o pequeñas empresas con varias rutas activas.",
+          "features": [
+            "Todo lo del plan Básico",
+            "Hasta 5 rutas simultáneas",
+            "Reportes de asistencia mensual",
+            "Notificaciones de estado a padres",
+            "Bitácora de incidencias",
+            "Vista de cámara interior*",
+            "Botón de pánico"
+          ]
+        },
+        {
+          "emoji": "🟠",
+          "name": "Completo",
+          "price": "$49.99",
+          "period": "/ mes",
+          "desc": "Para empresas de transporte escolar con flotas grandes y múltiples rutas.",
+          "features": [
+            "Todo lo del plan Intermedio",
+            "Rutas ilimitadas",
+            "Monitorización global en vivo",
+            "Analítica avanzada de flota",
+            "Seguimiento GPS en tiempo real",
+            "Historial completo de rutas",
+            "Alertas personalizadas"
+          ]
+        }
+      ]
+    },
+    "how": {
+      "label": "¿Cómo funciona?",
+      "title": "De la configuración al primer viaje",
+      "subtitle": "En pocos pasos tu operación está digitalizada y lista para operar.",
+      "steps": [
+        {
+          "title": "El administrador contrata un plan",
+          "desc": "Accede a la plataforma y selecciona el plan que se adapta al tamaño de su operación."
+        },
+        {
+          "title": "Registra conductores, padres y alumnos",
+          "desc": "Crea las cuentas del equipo y asigna a cada alumno con su respectivo padre o tutor."
+        },
+        {
+          "title": "Configura rutas y paradas",
+          "desc": "Define la secuencia de paradas de cada ruta y asigna un conductor responsable."
+        },
+        {
+          "title": "El conductor opera desde su vista",
+          "desc": "Durante el trayecto marca abordajes, reporta incidencias e inicia o finaliza el viaje."
+        },
+        {
+          "title": "Los padres monitorean en tiempo real",
+          "desc": "Reciben notificaciones automáticas y pueden seguir el trayecto de sus hijos desde la plataforma."
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "¿Listo para digitalizar tu operación?",
+      "desc": "Únete a KidTrack y deja atrás el caos de WhatsApp, llamadas y papel.",
+      "btn_hire":   "Adquirir plan",
+      "btn_signin": "Iniciar sesión"
+    },
+    "footer": {
+      "text": "© 2026 <strong>KidTrack</strong> — Plataforma de gestión de transporte escolar. Todos los derechos reservados."
+    }
+  }, 
+  
+  "en": {
+    "nav": {
+      "features": "Features",
+      "roles": "Roles",
+      "plans": "Plans",
+      "how": "How it works?",
+      "signin": "Sign in",
+      "cta": "Get started"
+    },
+    "hero": {
+      "badge": "Live system",
+      "title_line1": "School transportation",
+      "title_line2": "safe and digital",
+      "description": "KidTrack digitalizes private school transportation operations. Real-time monitoring, route management and communication between drivers and parents — all in one place.",
+      "btn_plans": "View plans",
+      "btn_how": "How does it work?",
+      "tag1": "Secure monitoring",
+      "tag2": "3 stops completed",
+      "phone_route": "Miraflores Route A",
+      "driver_name": "Luis Medina",
+      "driver_status": "Active driver",
+      "driver_badge": "On route",
+      "student_name": "Sofía Mamani",
+      "student_status": "Boarded at stop 2"
+    },
+    "stats": {
+      "roles_num": "3",
+      "roles_label": "Differentiated roles",
+      "digital_num": "100%",
+      "digital_label": "Digitalized operation",
+      "plans_num": "3",
+      "plans_label": "Available plans",
+      "routes_num": "∞",
+      "routes_label": "Routes on full plan"
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything you need to manage your fleet",
+      "subtitle": "Designed to replace WhatsApp, calls and paper with a centralized, professional platform.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Route & stop management",
+          "desc": "Create routes with their stops, assign drivers and students from a centralized, intuitive dashboard."
+        },
+        {
+          "icon": "📡",
+          "title": "Real-time monitoring",
+          "desc": "Parents follow their children's journey live. Administrators supervise the entire fleet simultaneously."
+        },
+        {
+          "icon": "✅",
+          "title": "Boarding control",
+          "desc": "The driver marks each student's boarding at each stop. Parents receive instant notifications."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Incident reporting",
+          "desc": "Drivers can report incidents during the trip. Everything is recorded in a detailed log."
+        },
+        {
+          "icon": "📊",
+          "title": "History & reports",
+          "desc": "Access the full history of trips, monthly attendance and fleet analytics according to your plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Status notifications",
+          "desc": "Automatic boarding, arrival and important event alerts to keep parents informed."
+        }
+      ]
+    },
+    "roles": {
+      "label": "System roles",
+      "title": "One platform, three experiences",
+      "subtitle": "Each role has its own view and permissions adapted to its function within the service.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrator",
+          "items": [
+            "Hires and manages the plan",
+            "Registers drivers and parents",
+            "Creates routes and stops",
+            "Assigns students to routes",
+            "Oversees the entire operation"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Driver",
+          "items": [
+            "Starts and ends trips",
+            "Marks student boarding",
+            "Reports on-route incidents",
+            "Accesses trip logbook",
+            "Panic button for emergencies"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Parent",
+          "items": [
+            "Monitors children's journey",
+            "Receives boarding notifications",
+            "Views trip history",
+            "Interior camera access (intermediate plan)",
+            "Personalized alerts (full plan)"
+          ]
+        }
+      ]
+    },
+    "plans": {
+      "label": "Plans",
+      "title": "Scale with your operation",
+      "subtitle": "From independent drivers to companies with large fleets. KidTrack grows with you.",
+      "footnote": "* Features marked with an asterisk depend on IoT devices installed in the vehicle.",
+      "btn_hire": "Get started",
+      "badge_popular": "Most popular",
+      "cards": [
+        {
+          "emoji": "🟢",
+          "name": "Basic",
+          "price": "$9.99",
+          "period": "/ month",
+          "desc": "For small groups or independent drivers with a single route.",
+          "features": [
+            "1 route management",
+            "Driver, parent and student registration",
+            "Static map with route and stops",
+            "Last pickup stop marking",
+            "Basic vehicle monitoring"
+          ]
+        },
+        {
+          "emoji": "🔵",
+          "name": "Intermediate",
+          "price": "$24.99",
+          "period": "/ month",
+          "desc": "For drivers or small companies with multiple active routes.",
+          "features": [
+            "Everything in Basic plan",
+            "Up to 5 simultaneous routes",
+            "Monthly attendance reports",
+            "Status notifications to parents",
+            "Incident logbook",
+            "Interior camera view*",
+            "Panic button"
+          ]
+        },
+        {
+          "emoji": "🟠",
+          "name": "Complete",
+          "price": "$49.99",
+          "period": "/ month",
+          "desc": "For school transportation companies with large fleets and multiple routes.",
+          "features": [
+            "Everything in Intermediate plan",
+            "Unlimited routes",
+            "Global live monitoring",
+            "Advanced fleet analytics",
+            "Real-time GPS tracking",
+            "Full route history",
+            "Custom alerts"
+          ]
+        }
+      ]
+    },
+    "how": {
+      "label": "How does it work?",
+      "title": "From setup to the first trip",
+      "subtitle": "In just a few steps your operation is digitalized and ready to run.",
+      "steps": [
+        {
+          "title": "The administrator hires a plan",
+          "desc": "Access the platform and select the plan that fits the size of your operation."
+        },
+        {
+          "title": "Register drivers, parents and students",
+          "desc": "Create team accounts and assign each student to their parent or guardian."
+        },
+        {
+          "title": "Set up routes and stops",
+          "desc": "Define the stop sequence for each route and assign a responsible driver."
+        },
+        {
+          "title": "The driver operates from their view",
+          "desc": "During the trip they mark boardings, report incidents and start or end the journey."
+        },
+        {
+          "title": "Parents monitor in real time",
+          "desc": "They receive automatic notifications and can follow their children's journey from the platform."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to digitalize your operation?",
+      "desc": "Join KidTrack and leave behind the chaos of WhatsApp, calls and paper.",
+      "btn_hire":   "Get a plan",
+      "btn_signin": "Sign in"
+    },
+    "footer": {
+      "text": "© 2026 <strong>KidTrack</strong> — School transportation management platform. All rights reserved."
+    }
+  }
+}

@@ -34,6 +34,83 @@
       "routes_num": "∞",
       "routes_label": "Rutas en plan completo"
     },
+    "features": {
+      "label": "Funcionalidades",
+      "title": "Todo lo que necesitas para gestionar tu flota",
+      "subtitle": "Diseñado para reemplazar WhatsApp, llamadas y papel con una plataforma centralizada y profesional.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Gestión de rutas y paradas",
+          "desc": "Crea rutas con sus paradas, asigna conductores y alumnos desde un panel centralizado e intuitivo."
+        },
+        {
+          "icon": "📡",
+          "title": "Monitoreo en tiempo real",
+          "desc": "Los padres siguen el trayecto de sus hijos en vivo. Los administradores supervisan toda la flota simultáneamente."
+        },
+        {
+          "icon": "✅",
+          "title": "Control de abordaje",
+          "desc": "El conductor marca el abordaje de cada alumno en cada parada. Los padres reciben notificaciones al instante."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Reporte de incidencias",
+          "desc": "Los conductores pueden reportar incidencias durante el viaje. Todo queda registrado en una bitácora detallada."
+        },
+        {
+          "icon": "📊",
+          "title": "Historial y reportes",
+          "desc": "Accede al historial completo de trayectos, asistencia mensual y analítica de flota según tu plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Notificaciones de estado",
+          "desc": "Alertas automáticas de abordaje, llegada y eventos importantes para mantener a los padres informados."
+        }
+      ]
+    },
+    "roles": {
+      "label": "Roles del sistema",
+      "title": "Una plataforma, tres experiencias",
+      "subtitle": "Cada rol tiene su propia vista y permisos adaptados a su función dentro del servicio.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrador",
+          "items": [
+            "Contrata y gestiona el plan",
+            "Registra conductores y padres",
+            "Crea rutas y paradas",
+            "Asigna alumnos a rutas",
+            "Supervisa toda la operación"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Conductor",
+          "items": [
+            "Inicia y finaliza trayectos",
+            "Marca abordaje de alumnos",
+            "Reporta incidencias en ruta",
+            "Accede a su bitácora de viajes",
+            "Botón de pánico en emergencias"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Padre de Familia",
+          "items": [
+            "Monitorea el trayecto de sus hijos",
+            "Recibe notificaciones de abordaje",
+            "Ve el historial de trayectos",
+            "Acceso a cámara interior (plan intermedio)",
+            "Alertas personalizadas (plan completo)"
+          ]
+        }
+      ]
+    },
     "plans": {
       "label": "Planes",
       "title": "Escala según tu operación",
@@ -117,16 +194,18 @@
         }
       ]
     },
+
     "cta": {
       "title": "¿Listo para digitalizar tu operación?",
       "desc": "Únete a KidTrack y deja atrás el caos de WhatsApp, llamadas y papel.",
-      "btn_hire": "Adquirir plan",
+      "btn_hire":   "Adquirir plan",
       "btn_signin": "Iniciar sesión"
     },
     "footer": {
       "text": "© 2026 <strong>KidTrack</strong> — Plataforma de gestión de transporte escolar. Todos los derechos reservados."
     }
-  },
+  }, 
+  
   "en": {
     "nav": {
       "features": "Features",
@@ -161,6 +240,83 @@
       "plans_label": "Available plans",
       "routes_num": "∞",
       "routes_label": "Routes on full plan"
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything you need to manage your fleet",
+      "subtitle": "Designed to replace WhatsApp, calls and paper with a centralized, professional platform.",
+      "cards": [
+        {
+          "icon": "🗺️",
+          "title": "Route & stop management",
+          "desc": "Create routes with their stops, assign drivers and students from a centralized, intuitive dashboard."
+        },
+        {
+          "icon": "📡",
+          "title": "Real-time monitoring",
+          "desc": "Parents follow their children's journey live. Administrators supervise the entire fleet simultaneously."
+        },
+        {
+          "icon": "✅",
+          "title": "Boarding control",
+          "desc": "The driver marks each student's boarding at each stop. Parents receive instant notifications."
+        },
+        {
+          "icon": "⚠️",
+          "title": "Incident reporting",
+          "desc": "Drivers can report incidents during the trip. Everything is recorded in a detailed log."
+        },
+        {
+          "icon": "📊",
+          "title": "History & reports",
+          "desc": "Access the full history of trips, monthly attendance and fleet analytics according to your plan."
+        },
+        {
+          "icon": "🔔",
+          "title": "Status notifications",
+          "desc": "Automatic boarding, arrival and important event alerts to keep parents informed."
+        }
+      ]
+    },
+    "roles": {
+      "label": "System roles",
+      "title": "One platform, three experiences",
+      "subtitle": "Each role has its own view and permissions adapted to its function within the service.",
+      "cards": [
+        {
+          "emoji": "🏢",
+          "title": "Administrator",
+          "items": [
+            "Hires and manages the plan",
+            "Registers drivers and parents",
+            "Creates routes and stops",
+            "Assigns students to routes",
+            "Oversees the entire operation"
+          ]
+        },
+        {
+          "emoji": "🚌",
+          "title": "Driver",
+          "items": [
+            "Starts and ends trips",
+            "Marks student boarding",
+            "Reports on-route incidents",
+            "Accesses trip logbook",
+            "Panic button for emergencies"
+          ]
+        },
+        {
+          "emoji": "👨‍👩‍👧",
+          "title": "Parent",
+          "items": [
+            "Monitors children's journey",
+            "Receives boarding notifications",
+            "Views trip history",
+            "Interior camera access (intermediate plan)",
+            "Personalized alerts (full plan)"
+          ]
+        }
+      ]
     },
     "plans": {
       "label": "Plans",
@@ -248,7 +404,7 @@
     "cta": {
       "title": "Ready to digitalize your operation?",
       "desc": "Join KidTrack and leave behind the chaos of WhatsApp, calls and paper.",
-      "btn_hire": "Get a plan",
+      "btn_hire":   "Get a plan",
       "btn_signin": "Sign in"
     },
     "footer": {

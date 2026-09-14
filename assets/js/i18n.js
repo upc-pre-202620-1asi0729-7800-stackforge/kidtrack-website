@@ -19,28 +19,28 @@
   const get = (obj, path) =>
     path.split('.').reduce((o, k) => (o != null ? o[k] : undefined), obj);
 
-  /* ── Apply translations to static elements ── */
-  function applyTranslations(lang) {
-    document.documentElement.lang = lang;
-    document.title = lang === 'es'
-      ? 'KidTrack — Transporte Escolar Seguro'
-      : 'KidTrack — Safe School Transportation';
+  /* ── Render dynamic lists ── */
+  function renderFeatures(lang) {
+    const cards = translations[lang].features.cards;
+    document.getElementById('features-grid').innerHTML = cards.map(c => `
+      <div class="feature-card">
+        <div class="feature-icon">${c.icon}</div>
+        <h3>${c.title}</h3>
+        <p>${c.desc}</p>
+      </div>`).join('');
+  }
 
-    /* text content */
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const val = get(translations[lang], key);
-      if (val !== undefined) el.textContent = val;
-    });
+  function renderRoles(lang) {
+    const cards = translations[lang].roles.cards;
+    document.getElementById('roles-grid').innerHTML = cards.map(c => `
+      <div class="role-card">
+        <div class="role-emoji">${c.emoji}</div>
+        <h3>${c.title}</h3>
+        <ul>${c.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      </div>`).join('');
+  }
 
-    /* innerHTML (for tags like <strong>) */
-    document.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const key = el.getAttribute('data-i18n-html');
-      const val = get(translations[lang], key);
-      if (val !== undefined) el.innerHTML = val;
-    });
-
-      function renderPlans(lang) {
+  function renderPlans(lang) {
     const d = translations[lang].plans;
     const featuredIdx  = 1;
     const planKeys     = ['BASIC', 'INTERMEDIATE', 'COMPLETE'];
@@ -69,6 +69,27 @@
       </div>`).join('');
   }
 
+  /* ── Apply translations to static elements ── */
+  function applyTranslations(lang) {
+    document.documentElement.lang = lang;
+    document.title = lang === 'es'
+      ? 'KidTrack — Transporte Escolar Seguro'
+      : 'KidTrack — Safe School Transportation';
+
+    /* text content */
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = get(translations[lang], key);
+      if (val !== undefined) el.textContent = val;
+    });
+
+    /* innerHTML (for tags like <strong>) */
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      const val = get(translations[lang], key);
+      if (val !== undefined) el.innerHTML = val;
+    });
+
     /* dynamic sections */
     renderFeatures(lang);
     renderRoles(lang);
@@ -96,11 +117,6 @@
     });
   });
 
-  /* ── Init ── */
-  const savedLang = localStorage.getItem('sr-lang') || 'en';
-  applyTranslations(savedLang);
-
-  
 
     /* ── About videos: data-yt is the single source of truth.
         Fills the thumbnail, then swaps in the YouTube player on click. ── */
@@ -120,6 +136,8 @@
     });
   });
 
-
+  /* ── Init ── */
+  const savedLang = localStorage.getItem('sr-lang') || 'en';
+  applyTranslations(savedLang);
 })
-
+();

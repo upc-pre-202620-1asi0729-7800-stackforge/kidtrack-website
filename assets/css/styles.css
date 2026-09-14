@@ -411,5 +411,64 @@ footer strong { color: var(--amber); }
 @media (max-width: 760px) {
   .about-grid { grid-template-columns: 1fr; }
 }
+* ==== assets/css/styles.css — líneas 272-328 ==== */
+/* ── PLANS ── */
+.plans-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem; margin-top: 3rem; align-items: start;
+}
+.plan-card {
+  background: var(--card); border-radius: 20px;
+  padding: 2rem; border: 2px solid transparent;
+  transition: transform .2s, box-shadow .2s;
+}
+.plan-card:hover { transform: translateY(-4px); }
+.plan-card.featured {
+  border-color: var(--amber);
+  box-shadow: 0 8px 40px rgba(224,122,43,.2);
+}
+.plan-badge {
+  display: inline-block; background: var(--amber); color: var(--white);
+  font-size: .72rem; font-weight: 700; padding: .25rem .7rem;
+  border-radius: 999px; margin-bottom: 1rem; letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.plan-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--navy); }
+.plan-price {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2rem; font-weight: 800; color: var(--navy);
+  margin: .6rem 0 0;
+}
+.plan-price span { font-size: .95rem; font-weight: 500; color: var(--muted); }
+.plan-desc { color: var(--muted); font-size: .88rem; margin: .5rem 0 1.5rem; line-height: 1.5; }
+.plan-features { list-style: none; display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.8rem; }
+.plan-features li {
+  font-size: .9rem; color: var(--dark);
+  display: flex; align-items: flex-start; gap: .5rem;
+}
+.plan-features li::before { content: '✓'; color: var(--coral); font-weight: 800; flex-shrink: 0; }
+.btn-plan {
+  display: block; text-align: center; text-decoration: none;
+  padding: .8rem; border-radius: 10px;
+  font-weight: 700; font-size: .95rem;
+  transition: all .2s;
+}
+.btn-plan-primary { background: var(--navy); color: white; }
+.btn-plan-primary:hover { background: #162C4B; }
+.btn-plan-outline { border: 2px solid var(--navy); color: var(--navy); }
+.btn-plan-outline:hover { background: var(--navy); color: white; }
+
+/* ── HOW IT WORKS ── */
+.steps { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 3rem; max-width: 680px; }
+.step { display: flex; gap: 1.5rem; align-items: flex-start; }
+.step-num {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--navy); color: var(--amber);
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.step-content h4 { font-weight: 700; color: var(--navy); margin-bottom: .3rem; }
+.step-content p { color: var(--muted); font-size: .92rem; line-height: 1.6; }
+
 
 

@@ -25,7 +25,7 @@ The KidTrack Project enables the digitalization of private school transport oper
 ![Parte 7](assets/images/p7.png)
 
 ### Links
-- Solution URL : 
+- Solution URL : https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
 
 ### Build with
 - Semantic HTML5 markup

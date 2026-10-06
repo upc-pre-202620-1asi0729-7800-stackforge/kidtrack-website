@@ -194,18 +194,37 @@
         }
       ]
     },
-
     "cta": {
       "title": "¿Listo para digitalizar tu operación?",
       "desc": "Únete a KidTrack y deja atrás el caos de WhatsApp, llamadas y papel.",
-      "btn_hire":   "Adquirir plan",
+      "btn_hire": "Adquirir plan",
       "btn_signin": "Iniciar sesión"
     },
     "footer": {
       "text": "© 2026 <strong>KidTrack</strong> — Plataforma de gestión de transporte escolar. Todos los derechos reservados."
+    },
+    "payment": {
+      "title": "Simula tu pago",
+      "subtitle": "Entorno de demostración: no se realiza ningún cargo real.",
+      "summary": "Resumen de orden",
+      "per_month": "/ mes",
+      "name": "Nombre en la tarjeta",
+      "number": "Número de tarjeta",
+      "expiry": "Vencimiento (MM/AA)",
+      "cvv": "CVV",
+      "demo_note": "Datos de prueba. No ingreses tu tarjeta real: no se envía ni se guarda nada.",
+      "pay": "Pagar",
+      "processing": "Procesando pago…",
+      "success_title": "¡Pago simulado exitoso!",
+      "success_desc": "Te llevamos a la plataforma para crear tu cuenta…",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "err_name": "Ingresa el nombre.",
+      "err_number": "Número de tarjeta inválido (16 dígitos).",
+      "err_expiry": "Vencimiento inválido o expirado.",
+      "err_cvv": "CVV inválido (3 dígitos)."
     }
-  }, 
-  
+  },
   "en": {
     "nav": {
       "features": "Features",
@@ -404,11 +423,32 @@
     "cta": {
       "title": "Ready to digitalize your operation?",
       "desc": "Join KidTrack and leave behind the chaos of WhatsApp, calls and paper.",
-      "btn_hire":   "Get a plan",
+      "btn_hire": "Get a plan",
       "btn_signin": "Sign in"
     },
     "footer": {
       "text": "© 2026 <strong>KidTrack</strong> — School transportation management platform. All rights reserved."
+    },
+    "payment": {
+      "title": "Simulate your payment",
+      "subtitle": "Demo environment: no real charge is made.",
+      "summary": "Order summary",
+      "per_month": "/ month",
+      "name": "Name on card",
+      "number": "Card number",
+      "expiry": "Expiry (MM/YY)",
+      "cvv": "CVV",
+      "demo_note": "Test data only. Don't enter your real card: nothing is sent or stored.",
+      "pay": "Pay",
+      "processing": "Processing payment…",
+      "success_title": "Simulated payment successful!",
+      "success_desc": "Taking you to the platform to create your account…",
+      "cancel": "Cancel",
+      "close": "Close",
+      "err_name": "Enter the name.",
+      "err_number": "Invalid card number (16 digits).",
+      "err_expiry": "Invalid or expired date.",
+      "err_cvv": "Invalid CVV (3 digits)."
     }
   }
 }

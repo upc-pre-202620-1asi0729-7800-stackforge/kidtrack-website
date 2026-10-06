@@ -1,7 +1,7 @@
 (
     async () => {
   /* ── Web app base URL ── */
-  const APP_URL          = 'https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/';
+  const APP_URL          = 'https://salmon-bush-078a34410.3.azurestaticapps.net';
   const SIGNIN_URL       = `${APP_URL}/identity-and-access-management/sign-in`;
   const SIGNUP_ADMIN_URL = `${APP_URL}/identity-and-access-management/sign-up`;
 
@@ -14,6 +14,8 @@
     console.error('Could not load translations.json', e);
     return;
   }
+
+  let currentLang = 'en';
 
   /* ── Helpers ── */
   const get = (obj, path) =>
@@ -55,7 +57,7 @@
         <ul class="plan-features">
           ${c.features.map(f => `<li>${f}</li>`).join('')}
         </ul>
-        <a href="#" class="btn-plan ${i === featuredIdx ? 'btn-plan-primary' : 'btn-plan-outline'}">${d.btn_hire}</a>
+        <a href="${planUrl}" data-plan-index="${i}" class="btn-plan ${i === featuredIdx ? 'btn-plan-primary' : 'btn-plan-outline'}">${d.btn_hire}</a>
       </div>`;
     }).join('');
   }
@@ -71,6 +73,7 @@
 
   /* ── Apply translations to static elements ── */
   function applyTranslations(lang) {
+    currentLang = lang;
     document.documentElement.lang = lang;
     document.title = lang === 'es'
       ? 'KidTrack — Transporte Escolar Seguro'
@@ -103,10 +106,92 @@
 
     /* ── CTA links → web app ── */
     const set = (id, url) => { const el = document.getElementById(id); if (el) el.href = url; };
-    // set('nav-cta-link', SIGNIN_URL); // desactivado temporalmente
+    set('nav-cta-link',    SIGNIN_URL);
     set('cta-hire-link',   SIGNUP_ADMIN_URL);
     set('cta-signin-link', SIGNIN_URL);
   }
+
+  /* ── Payment simulation (demo: no card data leaves the page) ── */
+  const PLAN_KEYS = ['BASIC', 'INTERMEDIATE', 'COMPLETE'];
+  const modal     = document.getElementById('pay-modal');
+  const payForm   = document.getElementById('pay-form');
+  const payStatus = document.getElementById('pay-status');
+  const field     = id => document.getElementById(`pay-${id}`);
+  let selected      = null;   // { tier, name, price }
+  let redirectTimer = null;
+
+  const pt = key => get(translations[currentLang], `payment.${key}`) || '';
+
+  function openPayment(index) {
+    const c = translations[currentLang].plans.cards[index];
+    selected = { tier: PLAN_KEYS[index], name: c.name, price: c.price };
+    document.getElementById('pay-plan-name').textContent  = `${c.emoji} ${c.name}`;
+    document.getElementById('pay-plan-price').textContent = `${c.price} ${pt('per_month')}`;
+    document.getElementById('pay-submit').textContent     = `${pt('pay')} ${c.price}`;
+    payForm.hidden = false;
+    payStatus.hidden = true;
+    payForm.querySelectorAll('.pay-err').forEach(e => (e.textContent = ''));
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    field('holder').focus();
+  }
+
+  function closePayment() {
+    clearTimeout(redirectTimer);
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  function validate() {
+    const errs = {};
+    const digits = field('number').value.replace(/\s/g, '');
+    const m = field('expiry').value.match(/^(\d{2})\/(\d{2})$/);
+    if (!field('holder').value.trim()) errs.holder = pt('err_name');
+    if (!/^\d{16}$/.test(digits)) errs.number = pt('err_number');
+    if (!m || +m[1] < 1 || +m[1] > 12 || new Date(2000 + +m[2], +m[1], 1) <= new Date()) errs.expiry = pt('err_expiry');
+    if (!/^\d{3}$/.test(field('cvv').value)) errs.cvv = pt('err_cvv');
+    payForm.querySelectorAll('.pay-err').forEach(e => (e.textContent = errs[e.dataset.for] || ''));
+    return Object.keys(errs).length === 0;
+  }
+
+  function showStatus(done) {
+    payForm.hidden = true;
+    payStatus.hidden = false;
+    document.getElementById('pay-spinner').hidden = done;
+    document.getElementById('pay-check').hidden   = !done;
+    document.getElementById('pay-status-title').textContent = done ? pt('success_title') : pt('processing');
+    document.getElementById('pay-status-desc').textContent  = done ? pt('success_desc') : '';
+  }
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-plan-index]');
+    if (btn) { e.preventDefault(); openPayment(+btn.dataset.planIndex); }
+  });
+  document.getElementById('pay-close').addEventListener('click', closePayment);
+  modal.addEventListener('click', e => { if (e.target === modal) closePayment(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closePayment(); });
+
+  field('number').addEventListener('input', e => {
+    e.target.value = e.target.value.replace(/\D/g, '').slice(0, 16).replace(/(.{4})/g, '$1 ').trim();
+  });
+  field('expiry').addEventListener('input', e => {
+    const d = e.target.value.replace(/\D/g, '').slice(0, 4);
+    e.target.value = d.length > 2 ? `${d.slice(0, 2)}/${d.slice(2)}` : d;
+  });
+  field('cvv').addEventListener('input', e => { e.target.value = e.target.value.replace(/\D/g, '').slice(0, 3); });
+
+  payForm.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!validate() || !selected) return;
+    showStatus(false);
+    setTimeout(() => {
+      showStatus(true);
+      const url = `${SIGNUP_ADMIN_URL}?planTier=${selected.tier}` +
+        `&planName=${encodeURIComponent(selected.name)}` +
+        `&planPrice=${encodeURIComponent(selected.price)}&paid=simulated`;
+      redirectTimer = setTimeout(() => { window.location.href = url; }, 1800);
+    }, 1800);
+  });
 
   /* ── Language switcher ── */
   document.querySelectorAll('.lang-btn').forEach(btn => {

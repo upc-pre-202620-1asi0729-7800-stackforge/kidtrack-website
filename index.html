@@ -158,6 +158,48 @@
   <p data-i18n-html="footer.text"></p>
 </footer>
 
+<!-- PAYMENT SIMULATION MODAL -->
+<div class="pay-overlay" id="pay-modal" hidden>
+  <div class="pay-card" role="dialog" aria-modal="true" aria-labelledby="pay-title">
+    <button type="button" class="pay-close" id="pay-close" aria-label="Close">&times;</button>
+    <div class="pay-demo-pill">DEMO</div>
+    <h3 id="pay-title" data-i18n="payment.title"></h3>
+    <p class="pay-sub" data-i18n="payment.subtitle"></p>
+
+    <div class="pay-order">
+      <span class="pay-order-label" data-i18n="payment.summary"></span>
+      <strong id="pay-plan-name"></strong>
+      <span id="pay-plan-price"></span>
+    </div>
+
+    <form id="pay-form" novalidate>
+      <label><span data-i18n="payment.name"></span>
+        <input id="pay-holder" type="text" autocomplete="off" value="KidTrack Demo" />
+        <small class="pay-err" data-for="holder"></small></label>
+      <label><span data-i18n="payment.number"></span>
+        <input id="pay-number" type="text" inputmode="numeric" autocomplete="off" maxlength="19" value="4242 4242 4242 4242" />
+        <small class="pay-err" data-for="number"></small></label>
+      <div class="pay-row">
+        <label><span data-i18n="payment.expiry"></span>
+          <input id="pay-expiry" type="text" inputmode="numeric" autocomplete="off" maxlength="5" placeholder="MM/YY" value="12/30" />
+          <small class="pay-err" data-for="expiry"></small></label>
+        <label><span data-i18n="payment.cvv"></span>
+          <input id="pay-cvv" type="text" inputmode="numeric" autocomplete="off" maxlength="3" value="123" />
+          <small class="pay-err" data-for="cvv"></small></label>
+      </div>
+      <p class="pay-note" data-i18n="payment.demo_note"></p>
+      <button type="submit" class="btn-plan btn-plan-primary pay-submit" id="pay-submit"></button>
+    </form>
+
+    <div class="pay-status" id="pay-status" hidden aria-live="polite">
+      <div class="pay-spinner" id="pay-spinner"></div>
+      <div class="pay-check" id="pay-check" hidden>✓</div>
+      <strong id="pay-status-title"></strong>
+      <p id="pay-status-desc"></p>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/i18n.js" defer></script>
 
 </body>

@@ -5,6 +5,7 @@
       "roles": "Roles",
       "plans": "Planes",
       "how": "¿Cómo funciona?",
+      "about": "Nosotros",
       "signin": "Iniciar sesión",
       "cta": "Comenzar"
     },
@@ -194,6 +195,15 @@
         }
       ]
     },
+    "about": {
+      "label": "Nosotros",
+      "title": "Conoce KidTrack en video",
+      "subtitle": "Descubre quiénes somos y cómo funciona nuestra plataforma en pocos minutos.",
+      "team_title": "Sobre el equipo",
+      "team_desc": "Conoce a StackForge, el equipo detrás de KidTrack y la misión que nos impulsa.",
+      "product_title": "Sobre el producto",
+      "product_desc": "Un recorrido por las funciones clave de la plataforma KidTrack en acción."
+    },
     "cta": {
       "title": "¿Listo para digitalizar tu operación?",
       "desc": "Únete a KidTrack y deja atrás el caos de WhatsApp, llamadas y papel.",
@@ -231,6 +241,7 @@
       "roles": "Roles",
       "plans": "Plans",
       "how": "How it works?",
+      "about": "About",
       "signin": "Sign in",
       "cta": "Get started"
     },
@@ -419,6 +430,15 @@
           "desc": "They receive automatic notifications and can follow their children's journey from the platform."
         }
       ]
+    },
+    "about": {
+      "label": "About",
+      "title": "Meet KidTrack on video",
+      "subtitle": "Discover who we are and how our platform works in just a few minutes.",
+      "team_title": "About the team",
+      "team_desc": "Meet StackForge, the team behind KidTrack and the mission that drives us.",
+      "product_title": "About the product",
+      "product_desc": "A walkthrough of the KidTrack platform's key features in action."
     },
     "cta": {
       "title": "Ready to digitalize your operation?",

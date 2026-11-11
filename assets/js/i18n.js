@@ -1,7 +1,7 @@
 (
     async () => {
   /* ── Web app base URL ── */
-  const APP_URL          = 'https://salmon-bush-078a34410.3.azurestaticapps.net';
+  const APP_URL          = 'https://victorious-tree-02a19840f.6.azurestaticapps.net';
   const SIGNIN_URL       = `${APP_URL}/identity-and-access-management/sign-in`;
   const SIGNUP_ADMIN_URL = `${APP_URL}/identity-and-access-management/sign-up`;
 
